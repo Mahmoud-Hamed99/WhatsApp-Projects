@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>Whatsapp UI</title>
+	<link rel="stylesheet" href="chat.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+	
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="chat">
+			<div class="chat-header">
+				<div class="profile">
+					<div class="left">
+						<a id="backToIndex">
+							<img src="img/arrow.png" class="arrow">
+						</a>
+						<img src="img/pp.png" class="pp">
+						<h2 id="ProjectName" ></h2>  
+					</div>
+					<div class="right">
+						<img src="img/more.png" class="icon">
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="chat-box" id="chat-box"></div>
+
+				<div class="chat-footer">
+					<!-- <img id="emoId" src="img/emo.png" class="emo"> -->
+					<textarea placeholder="Type a message" id="msg" onkeypress="display(event)" onkeydown="Backspace(event)"></textarea>
+					
+					<div id="userMentionDiv" class="mentions" hidden="hidden"></div>
+
+					<div class="icons">
+						
+						<!-- <img id="attach-fileId" src="img/attach file.png"> -->
+						<img id="cameraId" src="img/camera.png">
+					</div>
+					<img id="recordButton" src="img/mic.png" class="mic">
+				</div>
+				</div>
+		</div>
+	<!-- </div> -->
+	
+<script src="chat.js"></script>
+
+</body>
+</html>

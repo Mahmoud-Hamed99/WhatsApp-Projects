@@ -1,0 +1,69 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      
+
+    </head>
+    <style>
+        .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25D366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.my-float{
+	margin-top:8px;
+}
+    </style>
+
+    <body>
+        <div id="rowId" class="row">
+            <div class="col s12 m4 offset-m4">
+            
+                <div class="teal white-text col s12" style="padding: 15px;"><b>WhatsApp</b> </div>
+                  <ul class="tabs teal">
+                    <li class="tab col s4"><a href="#test1"  class="white-text">Projects</a> </li>
+                    
+                    <li class="tab col s4"><a href="#test2"  class="white-text">Contacts</a> </li>
+                  </ul>
+            </div>
+
+                <div id="test1" class="col s12 m4 offset-m4">      
+                    <a id="addProjectLink" href="addProject.html" class="float" target="_self">
+                      <img src="img/add-user.png" width="45px" height="45px" class="fa fa-whatsapp my-float">
+                    </a>
+                </div>
+                
+                <div id="test2" class="col s12 m4 offset-m4">                
+                        <a id="addContactLink" href="addContact.html" class="float" target="_self">
+                            <img src="img/add-user.png" width="45px" height="45px" class="fa fa-whatsapp my-float">
+                        </a>
+                </div>
+
+        </div>
+       
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script src="index.js"> </script>
+
+</body>
+</html>
+        

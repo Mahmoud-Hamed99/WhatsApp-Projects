@@ -1,0 +1,239 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.container { 
+	margin: auto;
+	max-width: 1280px;
+	width: 100%;
+}
+.chat {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	 
+	background: #f1f0e8;
+}
+.chat-header {
+	display: flex;
+	cursor: pointer;
+}
+.profile {
+	width: 100%;
+	background: #036055;
+	display: flex;
+	align-items: center;
+	height: 50px;
+	
+	position: relative;
+}
+.profile .pp {
+	width: 35px;
+	display: inline-block;
+	border-radius: 50%;
+	margin-left: 25px;
+}
+.profile .arrow {
+	display: inline-block;
+	width: 25px;
+	position: absolute;
+	top: 12px;
+	cursor: pointer;
+}
+.profile h2 {
+	display: inline-block;
+	line-height: 35px;
+	vertical-align:text-bottom;
+	padding-left: 5px;
+	margin-bottom: 3px;
+	color: #fff;
+	font-size: 18px;
+}
+.profile span {
+	color: #ccc;
+	position: absolute;
+	top: 30px;
+	left: 90px;
+	font-size: 12px;
+}
+.right .icon {
+	display: inline-block;
+	width: 25px;
+	margin-right: 10px;
+}
+.profile .left {
+	flex: 1;
+}
+
+.chat-box {
+	/* background: url('../img/bg.jpeg'); */
+	background-attachment: fixed; 
+	padding-left: 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	flex: 1;
+}
+
+.chat-box .img_chat {
+	width: 280px;
+}
+
+.chat-r {
+	display: flex;
+}
+.chat-r .sp {
+	flex: 1;
+}
+
+.chat-l {
+	display: flex;
+	margin-top: 3px;
+}
+.chat-l .sp {
+	flex: 1;
+}
+
+.chat-box .mess {
+	max-width: 300px;
+	background: #F7FCF6;
+	padding: 0px 14px 3px 14px;
+	border-radius: 10px;
+	margin: 2px 2px;
+	cursor: pointer;
+}
+
+.chat-box .mess p {
+	word-break: break-all;
+	font-size: 18px;
+}
+.chat-box .mess-r {
+    background: #E2FFC7;
+}
+.chat-box .emoji {
+	width: 20px;
+}
+.chat-box .check {
+	float: right;
+}
+.chat-box .check img {
+	width: 17px;
+	margin-top: 2px;
+}
+.chat-box .check span {
+	color: #888;
+	font-size: 12px;
+	font-weight: 700px;
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+}
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+	background: #aaa;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.chat-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 60px;
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	margin-left: 1px;
+}
+.chat-footer textarea {
+	display: block;
+	flex: 1;
+	width: 100%;
+	height: 50px;
+	border-radius: 60px;
+	outline: none;
+	font-size: 18px;
+	padding-left: 45px;
+	padding-right: 90px;
+	padding-top: 12px;
+	border: 2px solid #ccc;
+	color: #555;
+	resize: none;
+}
+.chat-footer .mic {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-left: 3px;
+}
+
+.chat-footer .emo{
+	/* display: block; */
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	left: 12px;
+	top: 10px;
+}
+.chat-footer .icons {
+	position: absolute;
+	right: 57px;
+	top: 12px;
+}
+.chat-footer .icons img{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+}
+
+.mentions{
+  list-style: none;
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 2px solid #888;
+  border-bottom-color: transparent;
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.mentions li{
+  height: 30px;
+  line-height: 30px;
+}
+
+.mentions li:first-child{
+  background: #eee;
+}
+.mentions li:hover{
+  background: rgb(86, 86, 124);
+}
+.mentions li.no-match{
+  color: #888;
+  font-style: italic;
+}
+.mentions li img{
+  height: 100%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.div-audio{
+	display: flex;
+	flex-direction: column;
+	 justify-content: right; 
+	 align-items: flex-end; 
+}
+
+.div-audio audio{
+	 margin: 10px; 
+}
